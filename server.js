@@ -84,7 +84,7 @@ app.post('/overlay-text', upload.single('gif'), async (req, res) => {
         res.json({
             success: true,
             message: 'GIF processed with text overlay',
-            url: overlayUrl,
+            Output_Url: overlayUrl,
             originalUrl: uploadResult.secure_url,
             parameters: { text, fontSize, x, y, angle, color }
         });
